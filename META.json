@@ -1,0 +1,41 @@
+{
+   "resources" : {
+      "homepage" : "http://search.cpan.org/dist/Dist-Zilla-Plugin-InstallGuide/",
+      "repository" : "http://github.com/hanekomu/Dist-Zilla-Plugin-InstallGuide",
+      "bugtracker" : "http://rt.cpan.org/Public/Dist/Display.html?Name=Dist-Zilla-Plugin-InstallGuide"
+   },
+   "generated_by" : "Dist::Zilla version 1.100660",
+   "meta-spec" : {
+      "version" : 1.4,
+      "url" : "http://module-build.sourceforge.net/META-spec-v1.4.html"
+   },
+   "version" : "1.100700",
+   "name" : "Dist-Zilla-Plugin-InstallGuide",
+   "author" : [
+      "Marcel Gruenauer <marcel@cpan.org>"
+   ],
+   "license" : "perl",
+   "build_requires" : {},
+   "provides" : {
+      "Dist::Zilla::Plugin::InstallGuide" : {
+         "version" : "1.100700",
+         "file" : "lib/Dist/Zilla/Plugin/InstallGuide.pm"
+      }
+   },
+   "requires" : {
+      "Dist::Zilla::Role::TextTemplate" : "0",
+      "Dist::Zilla::Role::FileGatherer" : "0",
+      "perl" : "5.008",
+      "Test::More" : "0",
+      "English" : "0",
+      "File::Find" : "0",
+      "File::Temp" : "0",
+      "Dist::Zilla::File::InMemory" : "0",
+      "Moose::Autobox" : "0",
+      "Moose" : "0"
+   },
+   "abstract" : "build an INSTALL file",
+   "configure_requires" : {
+      "ExtUtils::MakeMaker" : "6.11"
+   }
+}
