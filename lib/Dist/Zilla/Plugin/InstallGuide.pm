@@ -3,7 +3,7 @@ use strict;
 use warnings;
 
 package Dist::Zilla::Plugin::InstallGuide;
-our $VERSION = '1.100700';
+our $VERSION = '1.100701';
 
 # ABSTRACT: build an INSTALL file
 use Moose;
@@ -41,7 +41,7 @@ So you can do:
 
     % perldoc {{ $package }}
 
-to read the documentation online with your favorite pager.
+to read the documentation with your favorite pager.
 |;
     my $content = $self->fill_in_string(
         $template,
@@ -71,7 +71,7 @@ Dist::Zilla::Plugin::InstallGuide - build an INSTALL file
 
 =head1 VERSION
 
-version 1.100700
+version 1.100701
 
 =head1 SYNOPSIS
 

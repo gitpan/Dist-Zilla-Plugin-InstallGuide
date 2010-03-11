@@ -10,6 +10,7 @@ README
 dist.ini
 lib/Dist/Zilla/Plugin/InstallGuide.pm
 t/00-compile.t
+t/000-report-versions.t
 t/author-critic.t
 t/perlcriticrc
 t/release-check-changes.t

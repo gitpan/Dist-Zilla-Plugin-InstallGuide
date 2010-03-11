@@ -2,7 +2,7 @@ NAME
     Dist::Zilla::Plugin::InstallGuide - build an INSTALL file
 
 VERSION
-    version 1.100700
+    version 1.100701
 
 SYNOPSIS
     In "dist.ini":
