@@ -3,16 +3,18 @@ use strict;
 use warnings;
 
 package Dist::Zilla::Plugin::InstallGuide;
-our $VERSION = '1.100701';
+BEGIN {
+  $Dist::Zilla::Plugin::InstallGuide::VERSION = '1.101420';
+}
 
-# ABSTRACT: build an INSTALL file
+# ABSTRACT: Build an INSTALL file
 use Moose;
 use Moose::Autobox;
 with 'Dist::Zilla::Role::FileGatherer';
 with 'Dist::Zilla::Role::TextTemplate';
 
 sub gather_files {
-    my ($self, $arg) = @_;
+    my $self = shift;
     require Dist::Zilla::File::InMemory;
     (my $main_package = $self->zilla->name) =~ s!-!::!g;
     my $template = q|
@@ -67,11 +69,11 @@ __END__
 
 =head1 NAME
 
-Dist::Zilla::Plugin::InstallGuide - build an INSTALL file
+Dist::Zilla::Plugin::InstallGuide - Build an INSTALL file
 
 =head1 VERSION
 
-version 1.100701
+version 1.101420
 
 =head1 SYNOPSIS
 

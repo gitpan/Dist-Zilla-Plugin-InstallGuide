@@ -1,8 +1,8 @@
 NAME
-    Dist::Zilla::Plugin::InstallGuide - build an INSTALL file
+    Dist::Zilla::Plugin::InstallGuide - Build an INSTALL file
 
 VERSION
-    version 1.100701
+    version 1.101420
 
 SYNOPSIS
     In "dist.ini":
