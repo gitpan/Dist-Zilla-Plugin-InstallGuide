@@ -41,7 +41,7 @@
    "provides" : {
       "Dist::Zilla::Plugin::InstallGuide" : {
          "file" : "lib/Dist/Zilla/Plugin/InstallGuide.pm",
-         "version" : "1.101460"
+         "version" : "1.101461"
       }
    },
    "resources" : {
@@ -53,6 +53,6 @@
          "url" : "http://github.com/hanekomu/Dist-Zilla-Plugin-InstallGuide"
       }
    },
-   "version" : "1.101460"
+   "version" : "1.101461"
 }
 

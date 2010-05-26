@@ -33,7 +33,7 @@ my %WriteMakefileArgs = (
     'Moose' => '0',
     'Moose::Autobox' => '0'
   },
-  'VERSION' => '1.101460',
+  'VERSION' => '1.101461',
   'test' => {
     'TESTS' => 't/*.t'
   }

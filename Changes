@@ -1,5 +1,9 @@
 Revision history for Perl extension Dist-Zilla-Plugin-InstallGuide
 
+1.101461  2010-05-26 17:30:09 Europe/Vienna
+    - Various small grammar and spelling tweaks. Also added mention of sudo.
+      (thanks autarch)
+
 1.101460  2010-05-26 10:12:15 Europe/Vienna
     - added support Module::Build
     - note cpanm as preferred installation method

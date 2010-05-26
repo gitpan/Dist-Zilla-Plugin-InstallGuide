@@ -21,7 +21,7 @@ name: Dist-Zilla-Plugin-InstallGuide
 provides:
   Dist::Zilla::Plugin::InstallGuide:
     file: lib/Dist/Zilla/Plugin/InstallGuide.pm
-    version: 1.101460
+    version: 1.101461
 requires:
   Dist::Zilla::File::InMemory: 0
   Dist::Zilla::Role::InstallTool: 0
@@ -32,4 +32,4 @@ requires:
 resources:
   homepage: http://search.cpan.org/dist/Dist-Zilla-Plugin-InstallGuide/
   repository: http://github.com/hanekomu/Dist-Zilla-Plugin-InstallGuide
-version: 1.101460
+version: 1.101461
