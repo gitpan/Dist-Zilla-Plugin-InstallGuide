@@ -409,9 +409,11 @@ BEGIN {
       Devel::Cover
       Module::Install
       Moose::Role
-      Test::YAML::Meta
+      Template::Test
+      Test::Kwalitee
       Test::Pod::Coverage
       Test::Portability::Files
+      Test::YAML::Meta
     );
 
     my $Test = Test::Builder->new;

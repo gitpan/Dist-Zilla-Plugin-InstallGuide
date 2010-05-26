@@ -4,11 +4,23 @@ This is the Perl distribution Dist-Zilla-Plugin-InstallGuide.
 ## Installation
 
 Dist-Zilla-Plugin-InstallGuide installation is straightforward.
-If your CPAN shell is set up, you should just be able to do
+
+### Installation with cpanm
+
+If you have cpanm, you only need one line:
+
+    % cpanm Dist::Zilla::Plugin::InstallGuide
+
+### Installating with the CPAN shell
+
+Alternatively, if your CPAN shell is set up, you should just be able to do:
 
     % cpan Dist::Zilla::Plugin::InstallGuide
 
-Download it, unpack it, then build it as per the usual:
+### Manual installation
+
+As a last resort, you can manually install it. Download it, unpack it, then
+build it as per the usual:
 
     % perl Makefile.PL
     % make && make test
