@@ -1,27 +1,26 @@
 ---
 abstract: 'Build an INSTALL file'
 author:
-  - 'Marcel Gruenauer <marcel@cpan.org>'
+  - 'Marcel Grünauer <marcel@cpan.org>'
+  - 'Mike Doherty <doherty@cpan.org>'
 build_requires:
-  Carp: 0
-  English: 0
   File::Find: 0
   File::Temp: 0
-  Scalar::Util: 0
-  Test::More: 0.94
+  Module::Build: 0.3601
+  Test::More: 0
 configure_requires:
-  ExtUtils::MakeMaker: 6.31
+  ExtUtils::MakeMaker: 6.30
+  Module::Build: 0.3601
 dynamic_config: 0
-generated_by: 'Dist::Zilla version 3.101440, CPAN::Meta::Converter version 2.101410'
+generated_by: 'Dist::Zilla version 4.300016, CPAN::Meta::Converter version 2.120630'
 license: perl
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
   version: 1.4
 name: Dist-Zilla-Plugin-InstallGuide
-provides:
-  Dist::Zilla::Plugin::InstallGuide:
-    file: lib/Dist/Zilla/Plugin/InstallGuide.pm
-    version: 1.101461
+no_index:
+  directory:
+    - corpus
 requires:
   Dist::Zilla::File::InMemory: 0
   Dist::Zilla::Role::InstallTool: 0
@@ -29,7 +28,9 @@ requires:
   Moose: 0
   Moose::Autobox: 0
   perl: 5.008
+  strict: 0
+  warnings: 0
 resources:
-  homepage: http://search.cpan.org/dist/Dist-Zilla-Plugin-InstallGuide/
-  repository: http://github.com/hanekomu/Dist-Zilla-Plugin-InstallGuide
-version: 1.101461
+  bugtracker: https://github.com/doherty/Dist-Zilla-Plugin-InstallGuide/issues
+  repository: git://github.com/doherty/Dist-Zilla-Plugin-InstallGuide.git
+version: 1.200000

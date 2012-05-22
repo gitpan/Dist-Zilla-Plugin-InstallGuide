@@ -2,7 +2,7 @@ NAME
     Dist::Zilla::Plugin::InstallGuide - Build an INSTALL file
 
 VERSION
-    version 1.101461
+    version 1.200000
 
 SYNOPSIS
     In "dist.ini":
@@ -18,37 +18,35 @@ DESCRIPTION
     distribution you are building and which installation instructions are
     appropriate.
 
-FUNCTIONS
+METHODS
   setup_installer
     Builds and writes the "INSTALL" file.
-
-INSTALLATION
-    See perlmodinstall for information and options on installing Perl
-    modules.
-
-BUGS AND LIMITATIONS
-    No bugs have been reported.
-
-    Please report any bugs or feature requests through the web interface at
-    <http://rt.cpan.org/Public/Dist/Display.html?Name=Dist-Zilla-Plugin-Inst
-    allGuide>.
 
 AVAILABILITY
     The latest version of this module is available from the Comprehensive
     Perl Archive Network (CPAN). Visit <http://www.perl.com/CPAN/> to find a
     CPAN site near you, or see
-    <http://search.cpan.org/dist/Dist-Zilla-Plugin-InstallGuide/>.
+    <https://metacpan.org/module/Dist::Zilla::Plugin::InstallGuide/>.
 
-    The development version lives at
-    <http://github.com/hanekomu/Dist-Zilla-Plugin-InstallGuide/>. Instead of
-    sending patches, please fork this project using the standard git and
-    github infrastructure.
+SOURCE
+    The development version is on github at
+    <http://github.com/doherty/Dist-Zilla-Plugin-InstallGuide> and may be
+    cloned from
+    <git://github.com/doherty/Dist-Zilla-Plugin-InstallGuide.git>
 
-AUTHOR
-      Marcel Gruenauer <marcel@cpan.org>
+BUGS AND LIMITATIONS
+    You can make new bug reports, and view existing ones, through the web
+    interface at
+    <https://github.com/doherty/Dist-Zilla-Plugin-InstallGuide/issues>.
+
+AUTHORS
+    *   Marcel Grünauer <marcel@cpan.org>
+
+    *   Mike Doherty <doherty@cpan.org>
 
 COPYRIGHT AND LICENSE
-    This software is copyright (c) 2010 by Marcel Gruenauer.
+    This software is copyright (c) 2010 by Marcel Grünauer
+    <marcel@cpan.org>.
 
     This is free software; you can redistribute it and/or modify it under
     the same terms as the Perl 5 programming language system itself.

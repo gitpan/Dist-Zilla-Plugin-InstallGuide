@@ -1,5 +1,10 @@
 Revision history for Perl extension Dist-Zilla-Plugin-InstallGuide
 
+1.200000  2012-05-22
+    - New maintainer: Mike Doherty, doherty@cpan.org
+    - Include instructions for both EUMM and MB if both install tools
+      are shipped [RT #56350]
+
 1.101461  2010-05-26 17:30:09 Europe/Vienna
     - Various small grammar and spelling tweaks. Also added mention of sudo.
       (thanks autarch)
