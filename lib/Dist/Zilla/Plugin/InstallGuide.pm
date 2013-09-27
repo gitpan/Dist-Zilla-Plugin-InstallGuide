@@ -5,7 +5,7 @@ use warnings;
 package Dist::Zilla::Plugin::InstallGuide;
 
 # ABSTRACT: Build an INSTALL file
-our $VERSION = '1.200000'; # VERSION
+our $VERSION = '1.200001'; # VERSION
 use Moose;
 use Moose::Autobox;
 with 'Dist::Zilla::Role::InstallTool';
@@ -80,17 +80,21 @@ If you are installing into a system-wide directory, you may need to run:
 sub setup_installer {
     my $self = shift;
     my $manual_installation = '';
-    for (@{ $self->zilla->files }) {
-        if ($_->name eq 'Makefile.PL') {
-            $manual_installation .= $makemaker_manual_installation;
-        }
-        elsif ($_->name eq 'Build.PL') {
-            $manual_installation .= $module_build_manual_installation;
-        }
+
+    my %installer = map { $_->name => 1 }
+        grep { $_->name eq 'Makefile.PL' or $_->name eq 'Build.PL' }
+        @{ $self->zilla->files };
+
+    if ($installer{'Build.PL'}) {
+        $manual_installation .= $module_build_manual_installation;
     }
-    unless (defined $manual_installation) {
+    elsif ($installer{'Makefile.PL'}) {
+        $manual_installation .= $makemaker_manual_installation;
+    }
+    unless ($manual_installation) {
         $self->log_fatal('neither Makefile.PL nor Build.PL is present, aborting');
     }
+
     require Dist::Zilla::File::InMemory;
     (my $main_package = $self->zilla->name) =~ s!-!::!g;
     my $content = $self->fill_in_string(
@@ -113,6 +117,7 @@ no Moose;
 1;
 
 __END__
+
 =pod
 
 =encoding utf-8
@@ -123,7 +128,7 @@ Dist::Zilla::Plugin::InstallGuide - Build an INSTALL file
 
 =head1 VERSION
 
-version 1.200000
+version 1.200001
 
 =head1 SYNOPSIS
 
@@ -188,4 +193,3 @@ This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.
 
 =cut
-
