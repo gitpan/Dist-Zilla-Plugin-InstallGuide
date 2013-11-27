@@ -5,7 +5,7 @@ use warnings;
 package Dist::Zilla::Plugin::InstallGuide;
 
 # ABSTRACT: Build an INSTALL file
-our $VERSION = '1.200001'; # VERSION
+our $VERSION = '1.200002'; # VERSION
 use Moose;
 use Moose::Autobox;
 with 'Dist::Zilla::Role::InstallTool';
@@ -120,7 +120,7 @@ __END__
 
 =pod
 
-=encoding utf-8
+=encoding UTF-8
 
 =head1 NAME
 
@@ -128,7 +128,7 @@ Dist::Zilla::Plugin::InstallGuide - Build an INSTALL file
 
 =head1 VERSION
 
-version 1.200001
+version 1.200002
 
 =head1 SYNOPSIS
 
