@@ -48,9 +48,11 @@
       },
       "runtime" : {
          "requires" : {
-            "Dist::Zilla::File::FromCode" : "0",
-            "Dist::Zilla::Role::InstallTool" : "0",
+            "Dist::Zilla::File::InMemory" : "0",
+            "Dist::Zilla::Role::FileGatherer" : "0",
+            "Dist::Zilla::Role::FileMunger" : "0",
             "Dist::Zilla::Role::TextTemplate" : "0",
+            "List::Util" : "0",
             "Moose" : "0",
             "Moose::Autobox" : "0",
             "perl" : "5.008",
@@ -63,7 +65,11 @@
             "File::Spec" : "0",
             "IO::Handle" : "0",
             "IPC::Open3" : "0",
-            "Test::More" : "0"
+            "Path::Tiny" : "0",
+            "Test::DZil" : "0",
+            "Test::Fatal" : "0",
+            "Test::More" : "0",
+            "if" : "0"
          }
       }
    },
@@ -78,6 +84,6 @@
          "web" : "https://github.com/doherty/Dist-Zilla-Plugin-InstallGuide"
       }
    },
-   "version" : "1.200004"
+   "version" : "1.200005"
 }
 

@@ -8,7 +8,8 @@ use Test::NoTabs;
 
 my @files = (
     'lib/Dist/Zilla/Plugin/InstallGuide.pm',
-    't/00-compile.t'
+    't/00-compile.t',
+    't/01-basic.t'
 );
 
 notabs_ok($_) foreach @files;
